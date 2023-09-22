@@ -114,7 +114,7 @@ export async function GET(request: Request) {
     const fields = searchParams.get('fields')
     if (product && fields) {
       product = fields.split(',').reduce((acc, field) => {
-        // @ts-ignore
+        // @ts-expect-error Type mismatch from template
         acc[field] = product[field]
 
         return acc
