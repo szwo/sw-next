@@ -3,13 +3,12 @@
     "scripts": {
         "build": "next build",
         "dev": "next dev --turbo",
-        "format": "prettier --write --ignore-unknown '**/*.{ts,tsx,css,scss,html,json,yml}'",
         "lint": "next lint",
         "lint-staged": "lint-staged",
-        "prettier": "prettier --write --ignore-unknown .",
-        "prettier:check": "prettier --check --ignore-unknown .",
+        "format": "prettier --write --ignore-unknown '{src,public}/**/*'",
+        "format:check": "prettier --check --ignore-unknown '{src,public}/**/*'",
         "start": "next start",
-        "test": "yarn prettier:check && yarn lint"
+        "update": "npm-check -u"
     },
     "git": {
         "pre-commit": "lint-staged"
@@ -46,6 +45,7 @@
         "eslint-config-prettier": "9.0.0",
         "eslint-plugin-react": "7.33.2",
         "lint-staged": "13.1.0",
+        "npm-check": "^6.0.1",
         "postcss": "8.4.20",
         "prettier": "2.8.1",
         "prettier-plugin-tailwindcss": "0.2.1",
