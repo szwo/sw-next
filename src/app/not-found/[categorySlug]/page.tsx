@@ -1,5 +1,5 @@
-import { getCategory } from '#/app/api/categories/getCategories';
-import { SkeletonCard } from '#/ui/skeleton-card';
+import { getCategory } from 'app/api/categories/getCategories';
+import { SkeletonCard } from 'ui/skeleton-card';
 
 export default async function Page({ params }: { params: { categorySlug: string } }) {
     // - `getCategory()` returns `notFound()` if the fetched data is `null` or `undefined`.

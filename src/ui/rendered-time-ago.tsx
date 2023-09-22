@@ -4,7 +4,9 @@ import ms from 'ms';
 import { useEffect, useRef, useState } from 'react';
 
 // https://github.com/streamich/react-use/blob/master/src/useInterval.ts
+// eslint-disable-next-line
 const useInterval = (callback: Function, delay?: number | null) => {
+    // eslint-disable-next-line
     const savedCallback = useRef<Function>(() => {});
 
     useEffect(() => {

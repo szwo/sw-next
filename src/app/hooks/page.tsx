@@ -1,4 +1,4 @@
-import { ExternalLink } from '#/ui/external-link';
+// import { ExternalLink } from 'ui/external-link';
 
 export default function Page() {
     return (
@@ -16,14 +16,14 @@ export default function Page() {
                     </li>
                 </ul>
 
-                <div className="flex gap-2">
+                {/* <div className="flex gap-2">
                     <ExternalLink href="https://beta.nextjs.org/docs/data-fetching/fetching#revalidating-data">
                         Docs
                     </ExternalLink>
                     <ExternalLink href="https://github.com/vercel/app-playground/tree/main/app/hooks">
                         Code
                     </ExternalLink>
-                </div>
+                </div> */}
             </div>
         </div>
     );

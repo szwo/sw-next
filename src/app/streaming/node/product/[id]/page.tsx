@@ -1,8 +1,8 @@
-import { RecommendedProducts, RecommendedProductsSkeleton } from '#/app/streaming/_components/recommended-products';
-import { Reviews, ReviewsSkeleton } from '#/app/streaming/_components/reviews';
-import { SingleProduct } from '#/app/streaming/_components/single-product';
-import { getBaseUrl } from '#/lib/getBaseUrl';
-import { Ping } from '#/ui/ping';
+import { RecommendedProducts, RecommendedProductsSkeleton } from 'app/streaming/_components/recommended-products';
+import { Reviews, ReviewsSkeleton } from 'app/streaming/_components/reviews';
+import { SingleProduct } from 'app/streaming/_components/single-product';
+import { getBaseUrl } from 'lib/getBaseUrl';
+import { Ping } from 'ui/ping';
 import { Suspense } from 'react';
 
 export default async function Page({ params }: { params: { id: string } }) {

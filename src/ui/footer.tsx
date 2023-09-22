@@ -1,3 +1,4 @@
+/* eslint react/no-unknown-property: 0 */
 'use client';
 
 export default function Footer({ reactVersion, nextVersion }: { reactVersion: string; nextVersion: string }) {
