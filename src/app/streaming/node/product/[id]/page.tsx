@@ -8,7 +8,6 @@ import { Suspense } from 'react';
 export default async function Page({ params }: { params: { id: string } }) {
     return (
         <div className="space-y-8 lg:space-y-14">
-            {/* @ts-expect-error Async Server Component */}
             <SingleProduct data={fetch(`${getBaseUrl()}/api/products?id=${params.id}`)} />
 
             <div className="relative">
@@ -18,7 +17,6 @@ export default async function Page({ params }: { params: { id: string } }) {
             </div>
 
             <Suspense fallback={<RecommendedProductsSkeleton />}>
-                {/* @ts-expect-error Async Server Component */}
                 <RecommendedProducts
                     path="/streaming/node/product"
                     data={fetch(
@@ -41,7 +39,6 @@ export default async function Page({ params }: { params: { id: string } }) {
             </div>
 
             <Suspense fallback={<ReviewsSkeleton />}>
-                {/* @ts-expect-error Async Server Component */}
                 <Reviews
                     data={fetch(
                         // We intentionally delay the reponse to simulate a slow data
